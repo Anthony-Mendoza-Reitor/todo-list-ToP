@@ -1,0 +1,326 @@
+/* styles.css */
+body {
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 0px;
+  }
+.container{
+    display: flex;
+    height: 900px;
+}
+.leftSide{
+    background-color: antiquewhite;
+    width: 14%;
+    border-right-style: groove;
+}
+.title, .titleP{
+    font-size: 32px;
+    width: 30px;
+    margin-top: 12px;
+    margin-left: 8px;
+}
+.leftTitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+#addButton{
+    border-radius: 150px;
+    font-size: 20px;
+    padding: 4px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: fit-content;
+    font-weight: bold;
+    background-color: green;
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.addButton{
+    display: flex;
+    align-content: center;
+    margin-top: 4px;
+}
+#defaultProject, p[class*="ProjectNAMES"]{
+    width: fit-content;
+    font-size: 22px;
+    background-color:  rgb(121, 165, 121);
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    margin-left: 12px;
+    padding: 4px;
+}
+div[class*="ProjectsDIV"]{
+    display: flex;
+}
+.rightcontent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.leftcontent > div > button{
+    height: 22px;
+    border-width: 0.5px;
+    border-radius: 20px;
+}
+.rightcontent > div > div > button{
+    height: 22px;
+    border-width: 0.5px;
+    border-radius: 20px;
+}
+div[class*="taskDIV"] {
+    display: flex;
+    padding: 8px;
+    margin-top: 4px;
+    margin-left: 4px;
+    width: 90%;
+    height: fit-content;
+    justify-content: space-around;
+    text-align: left;
+    align-items: center;
+    background-color: white;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 4px;
+}
+.taskDIV > *{
+    margin: 8px;
+    height: fit-content;
+}
+.taskDel{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nameDele{
+    width: fit-content;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    align-items: start;
+}
+.rightSide{
+    background-color: rgb(214, 187, 152);
+    width: 86%;
+}
+.rightTitle{
+    padding: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 50px;
+    width: 90%;
+}
+#addTaskButton{
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    align-content: center;
+    background-color: green;
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+.addTaskButton{
+    display: flex;
+    align-content: center;
+    margin-top: 4px;
+}
+/* This is for add project Form */
+
+.modular1{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+    height: 140px;
+    width: 350px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 8px;
+    visibility: hidden;
+}
+.modularr{
+    height: 80px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+.formhead{
+    width: 300px;
+    font-size: 24px;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 12px;
+}
+#FormprojectName{
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 12px;
+}
+.PNbuttonsBucket{
+    width: 300px;
+    display: flex;
+    justify-content: end;
+}
+#cancelButton1, #cancelButton2, #cancelButton3, #cancelButton4{
+    border-radius: 20px;
+    background-color: rgb(136, 98, 98);
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+#createButton1, #createButton2,  #createButton3,  #createButton4{
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+    margin-left: 5px;
+}
+#deleteButton4, #deleteButton3{
+    border-radius: 20px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+/* This is for add Task Form */
+
+.modular2{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+    height: 300px;
+    width: 350px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 8px;
+    visibility: hidden;
+}
+.modularr2{
+    height: 160px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+.FormModular2{
+    display: flex;
+    flex-direction: column;
+}
+.formhead2{
+    width: 300px;
+    font-size: 24px;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 12px;
+}
+#FormtaskName{
+    border-radius: 4px;
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 12px;
+}
+#FormtaskDescription{
+    height: 40px;
+    width: 280px;
+    margin-bottom: 12px;
+}
+#FormtaskDueDate{
+    margin-right: 12px;
+    margin-bottom: 4px;
+}
+.TNlabel, .TDlabel, .TPlabel, .DDlabel{
+    width: 300px;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+/* This is for delete a project Form */
+
+.modular3{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+    height: 140px;
+    width: 350px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 8px;
+    visibility: hidden;
+}
+.modularr3{
+    height: 80px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+.projectDeleteHeader{
+    width: 300px;
+    font-size: 24px;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 4px;
+}
+.projectDeleteParagraph{
+    color: rgb(255, 0, 0);
+    text-shadow: 0.5px 1px rgb(0, 0, 0);
+}
+.DeletebuttonsBucket{
+    width: 300px;
+    display: flex;
+    justify-content: end;
+}
+
+/* This is for delete a Task Form */
+
+.modular4{
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    background-color: white;
+    height: 140px;
+    width: 350px;
+    border-style: solid;
+    border-color: grey;
+    border-radius: 8px;
+    visibility: hidden;
+}
+.modularr4{
+    height: 80px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+}
+.projectDeleteHeader2{
+    width: 300px;
+    font-size: 24px;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 4px;
+}
+.projectDeleteParagraph2{
+    color: rgb(255, 0, 0);
+    text-shadow: 0.5px 1px rgb(0, 0, 0);
+}
+.DeletebuttonsBucket2{
+    width: 300px;
+    display: flex;
+    justify-content: end;
+}
